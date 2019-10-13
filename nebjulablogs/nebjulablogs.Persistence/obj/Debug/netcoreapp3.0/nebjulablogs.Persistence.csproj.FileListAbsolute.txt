@@ -1,0 +1,7 @@
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\bin\Debug\netcoreapp3.0\nebjulablogs.Persistence.deps.json
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\bin\Debug\netcoreapp3.0\nebjulablogs.Persistence.dll
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\obj\Debug\netcoreapp3.0\nebjulablogs.Persistence.csprojAssemblyReference.cache
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\obj\Debug\netcoreapp3.0\nebjulablogs.Persistence.AssemblyInfoInputs.cache
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\obj\Debug\netcoreapp3.0\nebjulablogs.Persistence.AssemblyInfo.cs
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\bin\Debug\netcoreapp3.0\nebjulablogs.Persistence.runtimeconfig.json
+C:\Users\JOE\source\repos\nebjulablogs\nebjulablogs\nebjulablogs.Persistence\bin\Debug\netcoreapp3.0\nebjulablogs.Persistence.runtimeconfig.dev.json
