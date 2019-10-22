@@ -4,11 +4,14 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using blogapi.ApiModels;
 using blogapi.DomainModels;
+using static blogapi.Specs.PostSpecs.GetPostSpec;
 
-namespace blogapi.Abstractions
+namespace blogapi.Abstractions.PostAbstractions
 {
   public interface IPostDataService : IDataService<Post>
   {
-    Task<IEnumerable<PostApiModel>> GetAllPost(Expression<Func<Post, object>> search);
+    Task<IList<Post>> GetAllPost();
+
+    Task<IList<Post>> GetFilteredPost(Type type);
   }
 }
