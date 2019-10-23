@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using blogapi.ApiModels;
 using blogapi.DomainModels;
+using blogapi.Specs.PostSpecs;
 using static blogapi.Specs.PostSpecs.GetPostSpec;
 
 namespace blogapi.Abstractions.PostAbstractions
@@ -12,6 +13,6 @@ namespace blogapi.Abstractions.PostAbstractions
   {
     Task<IList<Post>> GetAllPost();
 
-    Task<IList<Post>> GetFilteredPost(Type type);
+    Task<IList<Post>> GetFilteredPost(GetPostSpec type);
   }
 }

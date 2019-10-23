@@ -22,16 +22,25 @@ namespace blogapi.Services
       return result;
     }
 
-    public Task<IList<Post>> GetFilteredPost(GetPostSpec spec)
+    public async Task<IList<Post>> GetFilteredPost(GetPostSpec spec)
     {
-      GetPostSpecFactory.ForgePredicates(x => x.Author.AuthorName == "somename",
-                                      x => x.Assets.SingleOrDefault(y => y.AssetPath.Contains("deleAli")).AssetPath != "harrykane");
       var specs = GetPostSpecFactory.CreateSpecs();
+      var postsDelayed = Context.Posts.AsNoTracking();
 
       specs.Predicates.ForEach(p =>
       {
-        Context.Posts.AsNoTracking().Where(p);
+        postsDelayed.Where(p);
       });
+
+      specs.OrderBy.ForEach(o =>
+      {
+        specs.ThenBy.ForEach(t =>
+        {
+          var order = postsDelayed.OrderBy(o);
+          order.ThenBy(t);
+        });
+      });
+      return await postsDelayed.ToListAsync();
     }
   }
 }
